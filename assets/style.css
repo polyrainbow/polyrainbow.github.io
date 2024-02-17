@@ -1,0 +1,67 @@
+:root {
+  --space: clamp(1rem, 5vw, 3rem);
+  --purple-1: #f3f1ff;
+  --purple-2: #cebeff;
+  --purple-3: #b69bff;
+  --purple-4: #a475f9;
+  --purple-5: #894cdf;
+  --purple-9: #33135c;
+  --purple-10: #1e093b;
+}
+
+@font-face {
+  font-family: "Visby";
+  font-weight: bold;
+  font-style: normal;
+  src: url("fonts/VisbyCF-ExtraBold.woff2") format("woff2"),
+    url("fonts/VisbyCF-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Visby";
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/VisbyCF-Medium.woff2") format("woff2"),
+    url("fonts/VisbyCF-Medium.woff") format("woff");
+}
+
+body {
+  background: linear-gradient(to bottom right, var(--purple-10), #000000);
+  font-family: 'Visby', sans-serif;
+  font-size: x-large;
+  color: var(--purple-1);
+  padding: var(--space);
+  max-width: 900px;
+  margin: auto;
+  min-height: calc(100vh - 2 * var(--space));
+}
+
+header {
+  
+  align-items: center;
+  gap: 25px;
+}
+
+#sebastian {
+  border-radius: 10px;
+  width: 200px;
+}
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+a, a:visited {
+  color: var(--purple-2);
+  text-decoration-color: var(--purple-5);
+}
+
+ul.simple {
+  padding: 0;
+}
+
+ul.simple li {
+  list-style: none;
+}
+
