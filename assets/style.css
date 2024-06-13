@@ -64,3 +64,51 @@ ul.simple li {
   list-style: none;
 }
 
+#projects {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  a {
+    text-decoration: none;
+    transition: scale 0.1s;
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    .project {
+      background-color: #231e2b;
+      border-radius: 20px;
+      width: 280px;
+      height: 480px;
+      flex-shrink: 0;
+      overflow: hidden;
+
+      img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+
+        &.icon {
+          width: 220px;
+          height: 220px;
+          padding: 30px;
+        }
+      }
+
+      .text {
+        padding: 10px;
+
+        .title {
+          font-weight: bold;
+          font-size: 0.8em; 
+        }
+
+        .description {
+          font-size: 0.6em; 
+        }
+      }
+    }
+  }
+}
